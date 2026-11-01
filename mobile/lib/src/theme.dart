@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-/// TriStellar brand colors (from the "Bigas ng Bayan" logo) for light and dark mode.
+/// PKMART brand colors (from the Prince & Ken logo) for light and dark mode.
 @immutable
 class AppColors extends ThemeExtension<AppColors> {
   const AppColors({
@@ -32,7 +32,7 @@ class AppColors extends ThemeExtension<AppColors> {
   static const light = AppColors(
     textSecondary: Color(0xFF5F6877),
     border: Color(0xFFE2E5EA),
-    brandSoft: Color(0xFFFDEEDD),
+    brandSoft: Color(0xFFE0EDF7),
     success: Color(0xFF047857),
     successSoft: Color(0xFFD1FAE5),
     warning: Color(0xFFB45309),
@@ -46,7 +46,7 @@ class AppColors extends ThemeExtension<AppColors> {
   static const dark = AppColors(
     textSecondary: Color(0xFF98A2B1),
     border: Color(0xFF2A313C),
-    brandSoft: Color(0xFF3A2614),
+    brandSoft: Color(0xFF10263A),
     success: Color(0xFF34D399),
     successSoft: Color(0xFF063B2C),
     warning: Color(0xFFFBBF24),
@@ -68,8 +68,8 @@ extension AppColorsX on BuildContext {
   AppColors get colors => Theme.of(this).extension<AppColors>()!;
 }
 
-const _brandLight = Color(0xFFC2570C);
-const _brandDark = Color(0xFFF59E42);
+const _brandLight = Color(0xFF005995);
+const _brandDark = Color(0xFF93C5FD);
 
 ThemeData buildTheme(Brightness brightness) {
   final isDark = brightness == Brightness.dark;

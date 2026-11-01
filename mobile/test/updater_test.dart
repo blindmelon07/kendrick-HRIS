@@ -15,7 +15,7 @@ const latest = {
   'version': '1.1.0',
   'build': 2,
   'min_build': 1,
-  'url': 'https://example.test/downloads/TriStellar-HRIS.apk?v=2',
+  'url': 'https://example.test/downloads/PKMART-HRIS.apk?v=2',
   'sha256': 'abc123',
   'notes': 'Profile photos and in-app updates.',
 };

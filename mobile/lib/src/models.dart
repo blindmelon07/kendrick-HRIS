@@ -1,4 +1,4 @@
-/// Data returned by the TriStellar HRIS `/api/v1` endpoints.
+/// Data returned by the PKMART HRIS `/api/v1` endpoints.
 library;
 
 double _num(Object? value) => (value as num? ?? 0).toDouble();

@@ -84,7 +84,7 @@ class ProfileScreen extends StatelessWidget {
             child: const Text('Sign out'),
           ),
           Text(
-            'TriStellar HRIS · Server ${apiUrl.replaceFirst(RegExp(r'^https?://'), '')}',
+            'PKMART HRIS · Server ${apiUrl.replaceFirst(RegExp(r'^https?://'), '')}',
             textAlign: TextAlign.center,
             style: TextStyle(fontSize: 12, color: colors.textSecondary),
           ),

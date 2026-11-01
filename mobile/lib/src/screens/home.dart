@@ -33,7 +33,7 @@ class HomeScreen extends StatelessWidget {
         return [
           Row(
             children: [
-              Image.asset('assets/wordmark.png', height: 36),
+              const BrandLogo(height: 36),
               const SizedBox(width: 8),
               const StatusBadge('HRIS', tone: BadgeTone.brand),
             ],

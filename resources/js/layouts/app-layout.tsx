@@ -1,6 +1,7 @@
 import { Link, usePage } from '@inertiajs/react';
 import type { ReactNode } from 'react';
 import { useEffect, useState } from 'react';
+import { BrandLogo } from '@/components/ui';
 import { cn } from '@/lib/utils';
 import { dashboard, logout } from '@/routes';
 import {
@@ -164,11 +165,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
                 )}
             >
                 <div className="flex h-14 items-center gap-2 border-b border-line px-5">
-                    <img
-                        src="/images/tristellar-wordmark.png"
-                        alt={name}
-                        className="h-9 w-auto"
-                    />
+                    <BrandLogo alt={name} className="h-9 w-auto" />
                     <span className="rounded bg-brand-soft px-1.5 py-0.5 text-[11px] font-semibold tracking-wider text-brand">
                         HRIS
                     </span>
@@ -236,11 +233,7 @@ export default function AppLayout({ children }: { children: ReactNode }) {
                     >
                         Menu
                     </button>
-                    <img
-                        src="/images/tristellar-wordmark.png"
-                        alt={name}
-                        className="h-7 w-auto"
-                    />
+                    <BrandLogo alt={name} className="h-7 w-auto" />
                 </header>
                 <main className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8 lg:py-8">
                     {children}

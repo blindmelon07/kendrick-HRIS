@@ -1,6 +1,6 @@
 <#
 .SYNOPSIS
-    Builds tristellar-hris-hostinger.zip for upload to Hostinger shared/cloud hosting.
+    Builds pkmart-hris-hostinger.zip for upload to Hostinger shared/cloud hosting.
 
 .DESCRIPTION
     Hostinger shared hosting has no Node.js, so the web assets are built here, and
@@ -12,8 +12,8 @@
 
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
-$staging = Join-Path $env:TEMP 'tristellar-hris-package'
-$zip = Join-Path $root 'tristellar-hris-hostinger.zip'
+$staging = Join-Path $env:TEMP 'pkmart-hris-package'
+$zip = Join-Path $root 'pkmart-hris-hostinger.zip'
 
 Write-Host '1/4 Building web assets...' -ForegroundColor Cyan
 Push-Location $root
@@ -29,7 +29,7 @@ if (Test-Path $staging) { Remove-Item $staging -Recurse -Force }
 New-Item -ItemType Directory -Path $staging | Out-Null
 
 $excludeDirs = @('node_modules', 'vendor', 'mobile', '.git', '.github', 'tests', '.claude', '.agents', '.vscode', '.idea', '.playwright-mcp', '.junie', '.cursor')
-$excludeFiles = @('.env', '.env.backup', '.env.production', 'hot', '*.docx', '*.xlsx', 'tristellar.jpg', 'tristellar-hris-hostinger.zip', 'package-for-hostinger.ps1', '*.log', '.phpunit.result.cache')
+$excludeFiles = @('.env', '.env.backup', '.env.production', 'hot', '*.docx', '*.xlsx', 'pkmartlogo.png', 'pkmart-hris-hostinger.zip', 'package-for-hostinger.ps1', '*.log', '.phpunit.result.cache')
 robocopy $root $staging /E /NFL /NDL /NJH /NJS /NP /XD $excludeDirs /XF $excludeFiles | Out-Null
 if ($LASTEXITCODE -ge 8) { throw "Copying files failed (robocopy exit code $LASTEXITCODE)." }
 

@@ -7,6 +7,6 @@ void createInertiaApp({
     title: (title) => (title ? `${title} - ${appName}` : appName),
     layout: (name) => (name.startsWith('auth/') ? null : AppLayout),
     progress: {
-        color: '#c2570c',
+        color: '#005995',
     },
 });

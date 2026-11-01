@@ -29,6 +29,29 @@ export function buttonClasses(
     );
 }
 
+/** Company wordmark; swaps to a light-blue variant when the OS is in dark mode. */
+export function BrandLogo({
+    className,
+    alt = 'Prince & Ken Construction & Marketing Corp.',
+}: {
+    className?: string;
+    alt?: string;
+}) {
+    return (
+        <picture>
+            <source
+                srcSet="/images/pkmart-wordmark-dark.png"
+                media="(prefers-color-scheme: dark)"
+            />
+            <img
+                src="/images/pkmart-wordmark.png"
+                alt={alt}
+                className={className}
+            />
+        </picture>
+    );
+}
+
 export function Button({
     variant = 'primary',
     size = 'md',

@@ -7,7 +7,7 @@ plugins {
     id("dev.flutter.flutter-gradle-plugin")
 }
 
-// Release signing key (android/key.properties + android/tristellar-release.jks, both git-ignored).
+// Release signing key (android/key.properties + android/pkmart-release.jks, both git-ignored).
 // Every update must be signed with the same key, or Android refuses to install it over the old app.
 val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
@@ -16,7 +16,7 @@ if (keystorePropertiesFile.exists()) {
 }
 
 android {
-    namespace = "com.tristellar.hris"
+    namespace = "com.pkmart.hris"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = flutter.ndkVersion
 
@@ -29,7 +29,7 @@ android {
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId = "com.tristellar.hris"
+        applicationId = "com.pkmart.hris"
         // You can update the following values to match your application needs.
         // For more information, see: https://flutter.dev/to/review-gradle-config.
         minSdk = 24

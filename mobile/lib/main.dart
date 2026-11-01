@@ -10,11 +10,11 @@ void main() {
   WidgetsFlutterBinding.ensureInitialized();
   final session = Session()..restore();
 
-  runApp(TriStellarApp(session: session));
+  runApp(PkmartApp(session: session));
 }
 
-class TriStellarApp extends StatelessWidget {
-  const TriStellarApp({super.key, required this.session});
+class PkmartApp extends StatelessWidget {
+  const PkmartApp({super.key, required this.session});
 
   final Session session;
 
@@ -23,7 +23,7 @@ class TriStellarApp extends StatelessWidget {
     return SessionScope(
       session: session,
       child: MaterialApp(
-        title: 'TriStellar HRIS',
+        title: 'PKMART HRIS',
         debugShowCheckedModeBanner: false,
         theme: buildTheme(Brightness.light),
         darkTheme: buildTheme(Brightness.dark),

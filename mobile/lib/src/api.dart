@@ -3,11 +3,11 @@ import 'dart:convert';
 
 import 'package:http/http.dart' as http;
 
-/// Address of the TriStellar HRIS server. Override at build time with
+/// Address of the PKMART HRIS server. Override at build time with
 /// `--dart-define=API_URL=https://your-site.example`.
 const apiUrl = String.fromEnvironment(
   'API_URL',
-  defaultValue: 'https://mistyrose-rook-580675.hostingersite.com',
+  defaultValue: 'https://mistyrose-walrus-927022.hostingersite.com',
 );
 
 class ApiException implements Exception {

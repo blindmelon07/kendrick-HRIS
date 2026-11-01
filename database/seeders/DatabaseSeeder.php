@@ -27,10 +27,10 @@ class DatabaseSeeder extends Seeder
     {
         $this->call([OrganizationSeeder::class, HolidaySeeder::class]);
 
-        User::factory()->admin()->create(['name' => 'System Administrator', 'email' => 'admin@tristellar.test']);
-        User::factory()->role(UserRole::HrTimekeeper)->create(['name' => 'HR Time Keeper', 'email' => 'timekeeper@tristellar.test']);
-        User::factory()->role(UserRole::HrPayroll)->create(['name' => 'HR Payroll Officer', 'email' => 'payroll@tristellar.test']);
-        User::factory()->role(UserRole::Finance)->create(['name' => 'Finance', 'email' => 'finance@tristellar.test']);
+        User::factory()->admin()->create(['name' => 'System Administrator', 'email' => 'admin@pkmart.test']);
+        User::factory()->role(UserRole::HrTimekeeper)->create(['name' => 'HR Time Keeper', 'email' => 'timekeeper@pkmart.test']);
+        User::factory()->role(UserRole::HrPayroll)->create(['name' => 'HR Payroll Officer', 'email' => 'payroll@pkmart.test']);
+        User::factory()->role(UserRole::Finance)->create(['name' => 'Finance', 'email' => 'finance@pkmart.test']);
 
         $trece = Branch::where('code', 'TRECE')->sole();
         $tanza = Branch::where('code', 'TANZA')->sole();
@@ -49,7 +49,7 @@ class DatabaseSeeder extends Seeder
             'job_title' => 'Operations Supervisor',
             'payment_method' => PaymentMethod::Atm,
             'bank_account_number' => '0012-3456-7890',
-            'user_id' => User::factory()->create(['name' => 'Maria Santos', 'email' => 'head@tristellar.test'])->id,
+            'user_id' => User::factory()->create(['name' => 'Maria Santos', 'email' => 'head@pkmart.test'])->id,
         ]);
         $operations->update(['head_employee_id' => $head->id]);
 
@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
             'department_id' => $operations->id,
             'shift_id' => $rankAndFile->id,
             'job_title' => 'Warehouse Staff',
-            'user_id' => User::factory()->create(['name' => 'Juan Dela Cruz', 'email' => 'employee@tristellar.test'])->id,
+            'user_id' => User::factory()->create(['name' => 'Juan Dela Cruz', 'email' => 'employee@pkmart.test'])->id,
         ]);
 
         Employee::factory()->perBiyahe()->create([

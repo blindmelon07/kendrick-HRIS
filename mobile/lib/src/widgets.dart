@@ -216,6 +216,22 @@ class StatusBadge extends StatelessWidget {
   }
 }
 
+/// Company wordmark; uses the light-blue variant in dark mode.
+class BrandLogo extends StatelessWidget {
+  const BrandLogo({super.key, required this.height});
+
+  final double height;
+
+  @override
+  Widget build(BuildContext context) => Image.asset(
+    Theme.of(context).brightness == Brightness.dark
+        ? 'assets/wordmark_dark.png'
+        : 'assets/wordmark.png',
+    height: height,
+    semanticLabel: 'Prince & Ken Construction & Marketing Corp.',
+  );
+}
+
 class SectionTitle extends StatelessWidget {
   const SectionTitle(this.text, {super.key});
 

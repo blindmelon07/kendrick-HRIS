@@ -1,27 +1,24 @@
 {
-  "_daily-records-table-Dr5B6BxX.js": {
-    "file": "assets/daily-records-table-Dr5B6BxX.js",
+  "_daily-records-table-C44i_0bh.js": {
+    "file": "assets/daily-records-table-C44i_0bh.js",
     "name": "daily-records-table",
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
-  "_date-range-filter-DlmbY0k_.js": {
-    "file": "assets/date-range-filter-DlmbY0k_.js",
+  "_date-range-filter-CdAFbe5A.js": {
+    "file": "assets/date-range-filter-CdAFbe5A.js",
     "name": "date-range-filter",
     "imports": [
-      "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js"
+      "resources/js/app.tsx"
     ]
   },
-  "_filing-summary-gtytjotv.js": {
-    "file": "assets/filing-summary-gtytjotv.js",
+  "_filing-summary-D4uS39Z8.js": {
+    "file": "assets/filing-summary-D4uS39Z8.js",
     "name": "filing-summary",
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
@@ -64,15 +61,8 @@
       "_wayfinder-Dp7PqxvV.js"
     ]
   },
-  "_ui-C-sqUdxP.js": {
-    "file": "assets/ui-C-sqUdxP.js",
-    "name": "ui",
-    "imports": [
-      "resources/js/app.tsx"
-    ]
-  },
-  "_use-record-form-ChG75iB0.js": {
-    "file": "assets/use-record-form-ChG75iB0.js",
+  "_use-record-form-BaSKaQ6A.js": {
+    "file": "assets/use-record-form-BaSKaQ6A.js",
     "name": "use-record-form",
     "imports": [
       "resources/js/app.tsx"
@@ -83,7 +73,7 @@
     "name": "wayfinder"
   },
   "resources/css/app.css": {
-    "file": "assets/app-DpcLY6kV.css",
+    "file": "assets/app-BeLDtkcT.css",
     "name": "app",
     "names": [
       "app.css"
@@ -92,7 +82,7 @@
     "isEntry": true
   },
   "resources/js/app.tsx": {
-    "file": "assets/app-CbuKHI-R.js",
+    "file": "assets/app-Cj1BY21s.js",
     "name": "app",
     "src": "resources/js/app.tsx",
     "isEntry": true,
@@ -125,257 +115,235 @@
     ]
   },
   "resources/js/pages/auth/login.tsx": {
-    "file": "assets/login-DLx5pBNg.js",
+    "file": "assets/login--UgtswbE.js",
     "name": "login",
     "src": "resources/js/pages/auth/login.tsx",
     "isDynamicEntry": true,
     "imports": [
       "_wayfinder-Dp7PqxvV.js",
-      "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js"
+      "resources/js/app.tsx"
     ]
   },
   "resources/js/pages/branches/index.tsx": {
-    "file": "assets/branches-Dfl-wGYx.js",
+    "file": "assets/branches-N5hUIc0V.js",
     "name": "branches",
     "src": "resources/js/pages/branches/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js"
+      "_use-record-form-BaSKaQ6A.js"
     ]
   },
   "resources/js/pages/dashboard.tsx": {
-    "file": "assets/dashboard-eiN-tkZl.js",
+    "file": "assets/dashboard-osUNyFeP.js",
     "name": "dashboard",
     "src": "resources/js/pages/dashboard.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
       "_payslips-Cni2blOp.js"
     ]
   },
   "resources/js/pages/departments/index.tsx": {
-    "file": "assets/departments-dyb7fpoP.js",
+    "file": "assets/departments-DA-djomo.js",
     "name": "departments",
     "src": "resources/js/pages/departments/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js"
+      "_use-record-form-BaSKaQ6A.js"
     ]
   },
   "resources/js/pages/employees/form.tsx": {
-    "file": "assets/form-DfPIY3Xh.js",
+    "file": "assets/form-B-cqkRpM.js",
     "name": "form",
     "src": "resources/js/pages/employees/form.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/employees/index.tsx": {
-    "file": "assets/employees-DYK8qYWb.js",
+    "file": "assets/employees-CnbrkWDx.js",
     "name": "employees",
     "src": "resources/js/pages/employees/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/employees/show.tsx": {
-    "file": "assets/show-rK-e5wwF.js",
+    "file": "assets/show-KBSCKc1D.js",
     "name": "show",
     "src": "resources/js/pages/employees/show.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
       "_payslips-Cni2blOp.js"
     ]
   },
   "resources/js/pages/holidays/index.tsx": {
-    "file": "assets/holidays-CaGKULAJ.js",
+    "file": "assets/holidays-DSutCOwI.js",
     "name": "holidays",
     "src": "resources/js/pages/holidays/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js",
+      "_use-record-form-BaSKaQ6A.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/payroll/loans.tsx": {
-    "file": "assets/loans-pz2fy55U.js",
+    "file": "assets/loans-2qQIu1U5.js",
     "name": "loans",
     "src": "resources/js/pages/payroll/loans.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js",
+      "_use-record-form-BaSKaQ6A.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/payroll/payslip.tsx": {
-    "file": "assets/payslip-4WSy0Evb.js",
+    "file": "assets/payslip-CWPOsQUZ.js",
     "name": "payslip",
     "src": "resources/js/pages/payroll/payslip.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/payroll/periods/index.tsx": {
-    "file": "assets/periods-CNnQ_gsA.js",
+    "file": "assets/periods-J1rYw2kJ.js",
     "name": "periods",
     "src": "resources/js/pages/payroll/periods/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/payroll/periods/show.tsx": {
-    "file": "assets/show-CkrXvCbF.js",
+    "file": "assets/show-BXw7vWSe.js",
     "name": "show",
     "src": "resources/js/pages/payroll/periods/show.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
       "_payslips-Cni2blOp.js"
     ]
   },
   "resources/js/pages/self-service/attendance.tsx": {
-    "file": "assets/attendance-Cp1v1G8k.js",
+    "file": "assets/attendance-Bdov0F5T.js",
     "name": "attendance",
     "src": "resources/js/pages/self-service/attendance.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_daily-records-table-Dr5B6BxX.js",
-      "_date-range-filter-DlmbY0k_.js"
+      "_daily-records-table-C44i_0bh.js",
+      "_date-range-filter-CdAFbe5A.js"
     ]
   },
   "resources/js/pages/self-service/filings.tsx": {
-    "file": "assets/filings-BuLJT2J5.js",
+    "file": "assets/filings-Dqx1b-sV.js",
     "name": "filings",
     "src": "resources/js/pages/self-service/filings.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
-      "_filing-summary-gtytjotv.js"
+      "_filing-summary-D4uS39Z8.js"
     ]
   },
   "resources/js/pages/self-service/payslips.tsx": {
-    "file": "assets/payslips-DiMDgWhE.js",
+    "file": "assets/payslips-D0Lei5GL.js",
     "name": "payslips",
     "src": "resources/js/pages/self-service/payslips.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
       "_payslips-Cni2blOp.js"
     ]
   },
   "resources/js/pages/shifts/index.tsx": {
-    "file": "assets/shifts-DiHFE6j-.js",
+    "file": "assets/shifts-C61NlIN8.js",
     "name": "shifts",
     "src": "resources/js/pages/shifts/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js",
+      "_use-record-form-BaSKaQ6A.js",
       "_format-DJEK08vF.js"
     ]
   },
   "resources/js/pages/timekeeping/endorsements.tsx": {
-    "file": "assets/endorsements-qAiML0b3.js",
+    "file": "assets/endorsements-C5SLbxaL.js",
     "name": "endorsements",
     "src": "resources/js/pages/timekeeping/endorsements.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_filing-summary-gtytjotv.js"
+      "_filing-summary-D4uS39Z8.js"
     ]
   },
   "resources/js/pages/timekeeping/filings.tsx": {
-    "file": "assets/filings-DLKyNRGe.js",
+    "file": "assets/filings-BNDynk9F.js",
     "name": "filings",
     "src": "resources/js/pages/timekeeping/filings.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_filing-summary-gtytjotv.js"
+      "_filing-summary-D4uS39Z8.js"
     ]
   },
   "resources/js/pages/timekeeping/time-logs.tsx": {
-    "file": "assets/time-logs-CSFXTuMN.js",
+    "file": "assets/time-logs-ChgBsert.js",
     "name": "time-logs",
     "src": "resources/js/pages/timekeeping/time-logs.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
-      "_date-range-filter-DlmbY0k_.js"
+      "_date-range-filter-CdAFbe5A.js"
     ]
   },
   "resources/js/pages/timekeeping/work-hours-show.tsx": {
-    "file": "assets/work-hours-show-DTUbG53C.js",
+    "file": "assets/work-hours-show-CTQOoAXh.js",
     "name": "work-hours-show",
     "src": "resources/js/pages/timekeeping/work-hours-show.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_daily-records-table-Dr5B6BxX.js",
-      "_date-range-filter-DlmbY0k_.js"
+      "_daily-records-table-C44i_0bh.js",
+      "_date-range-filter-CdAFbe5A.js"
     ]
   },
   "resources/js/pages/timekeeping/work-hours.tsx": {
-    "file": "assets/work-hours-DAas2Bie.js",
+    "file": "assets/work-hours-CupRg7yQ.js",
     "name": "work-hours",
     "src": "resources/js/pages/timekeeping/work-hours.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
       "_format-DJEK08vF.js",
-      "_date-range-filter-DlmbY0k_.js"
+      "_date-range-filter-CdAFbe5A.js"
     ]
   },
   "resources/js/pages/users/index.tsx": {
-    "file": "assets/users-CHFnkvC8.js",
+    "file": "assets/users-B00Sxj46.js",
     "name": "users",
     "src": "resources/js/pages/users/index.tsx",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.tsx",
-      "_ui-C-sqUdxP.js",
-      "_use-record-form-ChG75iB0.js",
+      "_use-record-form-BaSKaQ6A.js",
       "_format-DJEK08vF.js"
     ]
   }

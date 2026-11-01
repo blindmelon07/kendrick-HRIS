@@ -1,5 +1,5 @@
 import { Form, Head } from '@inertiajs/react';
-import { Button, Checkbox, Field, Input } from '@/components/ui';
+import { BrandLogo, Button, Checkbox, Field, Input } from '@/components/ui';
 import { store } from '@/routes/login';
 
 export default function Login() {
@@ -9,13 +9,9 @@ export default function Login() {
             <div className="flex min-h-screen items-center justify-center px-4">
                 <div className="w-full max-w-sm">
                     <div className="mb-8 text-center">
-                        <img
-                            src="/images/tristellar-wordmark.png"
-                            alt="TriStellar – Bigas ng Bayan"
-                            className="mx-auto h-20 w-auto"
-                        />
+                        <BrandLogo className="mx-auto h-20 w-auto" />
                         <h1 className="mt-4 text-xl font-semibold text-ink">
-                            TriStellar HRIS
+                            PKMART HRIS
                         </h1>
                         <p className="mt-1 text-sm text-ink-muted">
                             Employee records, timekeeping and payroll

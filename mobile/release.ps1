@@ -1,10 +1,10 @@
 <#
 .SYNOPSIS
-    Builds a new TriStellar HRIS app release for in-app updates.
+    Builds a new PKMART HRIS app release for in-app updates.
 
 .DESCRIPTION
     Bumps the build number in pubspec.yaml, builds the signed release APK, and writes
-    dist\TriStellar-HRIS.apk plus dist\latest.json (version, checksum, release notes).
+    dist\PKMART-HRIS.apk plus dist\latest.json (version, checksum, release notes).
     Upload BOTH files to the site's public/downloads/ folder; installed apps then offer
     the update the next time they are opened.
 
@@ -25,14 +25,14 @@ param(
 
     [switch] $SkipBuild,
 
-    [string] $SiteUrl = 'https://mistyrose-rook-580675.hostingersite.com'
+    [string] $SiteUrl = 'https://mistyrose-walrus-927022.hostingersite.com'
 )
 
 $ErrorActionPreference = 'Stop'
 $root = $PSScriptRoot
 $pubspec = Join-Path $root 'pubspec.yaml'
 $dist = Join-Path $root 'dist'
-$apk = Join-Path $dist 'TriStellar-HRIS.apk'
+$apk = Join-Path $dist 'PKMART-HRIS.apk'
 $latestPath = Join-Path $dist 'latest.json'
 
 if (-not (Test-Path (Join-Path $root 'android\key.properties'))) {
@@ -81,7 +81,7 @@ $release = [ordered]@{
     version = $Version
     build = $build
     min_build = $minBuild
-    url = "$SiteUrl/downloads/TriStellar-HRIS.apk?v=$build"
+    url = "$SiteUrl/downloads/PKMART-HRIS.apk?v=$build"
     sha256 = (Get-FileHash $apk -Algorithm SHA256).Hash.ToLower()
     notes = $Notes
     released_at = (Get-Date).ToString('yyyy-MM-dd HH:mm')

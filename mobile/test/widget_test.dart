@@ -146,7 +146,7 @@ void main() {
     );
     await session.restore();
 
-    await tester.pumpWidget(TriStellarApp(session: session));
+    await tester.pumpWidget(PkmartApp(session: session));
     await tester.pumpAndSettle();
 
     expect(find.text('Employee Kiosk'), findsOneWidget);
@@ -177,7 +177,7 @@ void main() {
       return jsonResponse(({
         'data': {
           'name': 'Juan Dela Cruz',
-          'email': 'employee@tristellar.test',
+          'email': 'employee@pkmart.test',
           'employee': {
             'id': 2,
             'employee_number': 'TS-00002',
@@ -199,12 +199,12 @@ void main() {
 
     final session = Session(api: ApiClient(client: client));
     await session.restore();
-    await tester.pumpWidget(TriStellarApp(session: session));
+    await tester.pumpWidget(PkmartApp(session: session));
     await tester.pumpAndSettle();
 
     await tester.enterText(
       find.byType(TextField).at(0),
-      'employee@tristellar.test',
+      'employee@pkmart.test',
     );
     await tester.enterText(find.byType(TextField).at(1), 'password');
     await tester.tap(find.widgetWithText(FilledButton, 'Sign in'));

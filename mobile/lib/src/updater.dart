@@ -179,7 +179,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
       OtaUpdate()
           .execute(
             widget.release.url,
-            destinationFilename: 'TriStellar-HRIS.apk',
+            destinationFilename: 'PKMART-HRIS.apk',
             sha256checksum: widget.release.sha256,
           )
           .listen((event) {
@@ -196,7 +196,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
                 if (!widget.required) Navigator.of(context).pop();
               case OtaStatus.PERMISSION_NOT_GRANTED_ERROR:
                 _fail(
-                  'Allow "Install unknown apps" for TriStellar HRIS in your phone settings, then try again.',
+                  'Allow "Install unknown apps" for PKMART HRIS in your phone settings, then try again.',
                 );
               case OtaStatus.CHECKSUM_ERROR:
                 _fail('The download was damaged. Please try again.');
@@ -231,7 +231,7 @@ class _UpdateDialogState extends State<UpdateDialog> {
           mainAxisSize: MainAxisSize.min,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text('Version ${release.version} of TriStellar HRIS is ready.'),
+            Text('Version ${release.version} of PKMART HRIS is ready.'),
             if (widget.required) ...[
               const SizedBox(height: 4),
               Text(

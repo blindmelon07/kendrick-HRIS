@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import '../api.dart';
 import '../session.dart';
 import '../theme.dart';
+import '../widgets.dart';
 
 class SignInScreen extends StatefulWidget {
   const SignInScreen({super.key});
@@ -60,14 +61,10 @@ class _SignInScreenState extends State<SignInScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
-                    Image.asset(
-                      'assets/wordmark.png',
-                      height: 72,
-                      semanticLabel: 'TriStellar – Bigas ng Bayan',
-                    ),
+                    const BrandLogo(height: 72),
                     const SizedBox(height: 16),
                     Text(
-                      'TriStellar HRIS',
+                      'PKMART HRIS',
                       textAlign: TextAlign.center,
                       style: Theme.of(context).textTheme.headlineSmall
                           ?.copyWith(fontWeight: FontWeight.w700),
